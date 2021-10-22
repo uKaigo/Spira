@@ -22,6 +22,8 @@ A primeira versão do site pode ser encontrada [aqui][primeira-versao].
 Outros
 ------
 
+Preview do site: https://ukaigo.github.io/Spira/
+
 Licença: [BSD-3-Clause](https://github.com/uKaigo/Spira/blob/main/LICENSE)
 
 
