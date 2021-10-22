@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <title>Spira - Seu Provedor de Internet</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/plans.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <script src="js/global.js" defer></script>
+    <script src="js/plans.js" defer></script>
+    <script src="js/contact.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h2><a href="#">SP</a></h2>
+
+      <nav class="header__nav">
+        <ul>
+          <li><a href="#plans">Planos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <article>
+        <h1>Spira</h1>
+        <h2>Seu Provedor de Internet.</h2>
+
+        <div class="hero__buttons">
+          <a href="#plans">Planos</a>
+          <a href="#contact">Contato</a>
+        </div>
+
+        <div class="scroll">▽</div>
+      </article>
+    </section>
+
+    <section class="plans" id="plans">
+      <template class="plans__modal_template">
+        <div class="plans__modal">
+          <div class="background"></div>
+          <div class="content">
+            <header>
+              <h2><span class="speed">00</span></h2>
+              <p>
+                Preencha os dados abaixo para fazer a compra de
+                <span class="speed">00</span> por R$
+                <span class="price">00,00</span>
+              </p>
+            </header>
+            <form>
+              <div>
+                <input type="text" id="modal_name" required />
+                <label for="modal_name">Nome</label>
+              </div>
+              <div>
+                <input type="text" id="modal_lastname" required />
+                <label for="modal_lastname">Sobrenome</label>
+              </div>
+              <div>
+                <input type="email" id="modal_email" required />
+                <label for="modal_email">Email</label>
+              </div>
+              <input type="submit" value="Próximo" />
+            </form>
+          </div>
+        </div>
+      </template>
+
+      <article>
+        <h2>Planos</h2>
+        <div class="plans__cards">
+          <div class="plans__card">
+            <header>
+              <h2>15</h2>
+              mbps
+            </header>
+            <div class="plans__card__features">
+              <h3>Conta com:</h3>
+              <ul>
+                <li>Acesso em banda larga.</li>
+                <li>Disponibilidade 24 horas.</li>
+                <li>Conexão via fibra ótica.</li>
+                <li>Mesma taxa de upload e download.</li>
+                <li>Velocidade do plano garantida.</li>
+              </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="plans__card__price">
+              <sup>R$</sup>
+              <h2>66,24</h2>
+              <sub>/mês</sub>
+              <div class="hr"></div>
+              <button class="plans__card__btn">Assine</button>
+            </div>
+          </div>
+
+          <div class="plans__card recommended">
+            <header>
+              <h2>50</h2>
+              mbps
+              <span class="plans__card__recommended_text">Recomendado</span>
+            </header>
+            <div class="plans__card__features">
+              <h3>Conta com:</h3>
+              <ul>
+                <li>Acesso em banda larga.</li>
+                <li>Disponibilidade 24 horas.</li>
+                <li>Conexão via fibra ótica.</li>
+                <li>Mesma taxa de upload e download.</li>
+                <li>Velocidade do plano garantida.</li>
+              </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="plans__card__price">
+              <sup>R$</sup>
+              <h2>90,04</h2>
+              <sub>/mês</sub>
+              <div class="hr"></div>
+              <button class="plans__card__btn">Assine</button>
+            </div>
+          </div>
+
+          <div class="plans__card">
+            <header>
+              <h2>100</h2>
+              mbps
+            </header>
+            <div class="plans__card__features">
+              <h3>Conta com:</h3>
+              <ul>
+                <li>Acesso em banda larga.</li>
+                <li>Disponibilidade 24 horas.</li>
+                <li>Conexão via fibra ótica.</li>
+                <li>Mesma taxa de upload e download.</li>
+                <li>Velocidade do plano garantida.</li>
+              </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="plans__card__price">
+              <sup>R$</sup>
+              <h2>124,04</h2>
+              <sub>/mês</sub>
+              <div class="hr"></div>
+              <button class="plans__card__btn">Assine</button>
+            </div>
+          </div>
+
+          <div class="plans__card">
+            <header>
+              <h2>Customizado</h2>
+            </header>
+            <div class="plans__card__features">
+              <h3>Conta com:</h3>
+              <ul>
+                <li>Acesso em banda larga.</li>
+                <li>Disponibilidade 24 horas.</li>
+                <li>Conexão via fibra ótica.</li>
+                <li>Mesma taxa de upload e download.</li>
+                <li>Velocidade especificada garantida.</li>
+              </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="plans__card__price">
+              <sup>R$</sup>
+              <h2>127,44+</h2>
+              <sub>/mês</sub>
+              <div class="hr"></div>
+              <button class="plans__card__btn">Assine</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="contact" id="contact">
+      <article>
+        <h2>Contato</h2>
+        <form>
+          <div>
+            <input type="text" id="name" required />
+            <label for="name">Nome</label>
+          </div>
+          <div>
+            <input type="text" id="lastname" required />
+            <label for="lastname">Sobrenome</label>
+          </div>
+          <div>
+            <input type="email" id="email" required />
+            <label for="email">Email</label>
+          </div>
+          <div>
+            <input type="text" id="subject" required />
+            <label for="subject">Assunto</label>
+          </div>
+          <div>
+            <textarea id="message" required></textarea>
+            <label for="message">Mensagem</label>
+          </div>
+          <input type="submit" value="Enviar" />
+        </form>
+      </article>
+    </section>
+  </body>
+</html>

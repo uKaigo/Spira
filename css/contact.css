@@ -1,0 +1,98 @@
+.contact article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact h2 {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.contact form {
+  margin-top: 30px;
+}
+
+.contact :is(div, input[type='submit']) {
+  position: relative;
+
+  min-width: 500px;
+
+  border: 1px black solid;
+  border-radius: 5px;
+
+  padding: 1px;
+  margin-bottom: 15px;
+
+  transition: all 0.15s;
+}
+
+.contact div.active {
+  border: 1px hsl(240, 76%, 59%) solid;
+}
+
+.contact div.invalid {
+  border: 1px hsl(0, 77%, 54%) solid;
+}
+
+.contact :is(input, textarea) {
+  font-size: 0.9em;
+
+  border: none;
+
+  padding: 5px;
+
+  outline: none;
+
+  width: 100%;
+  min-height: 40px;
+}
+
+.contact textarea {
+  font-size: 0.96em;
+  font-family: inherit;
+
+  padding-top: 10px;
+
+  overflow: visible;
+
+  min-width: 100%;
+  max-height: 200px;
+}
+
+.contact input[type='submit']:hover {
+  border: 1px hsl(240, 76%, 59%) solid;
+
+  color: white;
+  background-color: hsl(240, 76%, 59%);
+
+  cursor: pointer;
+}
+
+.contact label {
+  display: inline;
+
+  cursor: text;
+
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  padding: 0 5px;
+
+  transform: translateY(-50%);
+
+  transition: all 0.15s;
+}
+
+.contact :is(input, textarea):focus + label,
+.contact div.active > label {
+  top: -1px;
+
+  color: hsl(240, 76%, 59%);
+  background-color: white;
+}
+
+.contact div.invalid > label {
+  color: hsl(0, 77%, 54%);
+}

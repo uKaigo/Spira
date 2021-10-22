@@ -1,0 +1,73 @@
+.hero {
+  display: flex;
+  align-items: center;
+
+  color: white;
+
+  background: white url('../img/hero.png') no-repeat fixed center;
+
+  clip-path: polygon(100% 0, 100% 90%, 50% 99.5%, 0% 90%, 0% 0%);
+}
+
+.hero article {
+  font-size: 1.5em;
+
+  margin-left: 10vw;
+}
+
+.hero h1 {
+  font-size: 2em;
+}
+
+.hero h2 {
+  font-size: 1.3em;
+
+  color: #d5d5d5;
+}
+
+.hero a {
+  display: inline-block;
+
+  font-size: 0.7em;
+
+  color: white;
+  border: 1px hsl(240, 76%, 59%) solid;
+  background-color: hsla(240, 76%, 59%, 0.15);
+
+  text-decoration: none;
+
+  padding: 15px 25px;
+  margin-top: 10px;
+
+  border-radius: 2px;
+
+  transition: all 0.25s;
+}
+
+/* a:is(:hover, :focus) poderia ser usado, mas eu acho que fica confuso. */
+.hero :is(a:hover, a:focus) {
+  background-color: hsl(240, 76%, 59%);
+}
+
+@keyframes scroll_animation {
+  from {
+    transform: translateX(-50%) translateY(0);
+  }
+  to {
+    transform: translateX(-50%) translateY(-15px);
+  }
+}
+
+.hero .scroll {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+
+  font-size: 1.2em;
+
+  user-select: none;
+
+  transform: translateX(-50%);
+
+  animation: scroll_animation 0.8s ease-in-out 0s infinite alternate;
+}
